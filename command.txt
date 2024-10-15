@@ -1,0 +1,89 @@
+เอาไว้สร้างเบื้อต้นสำหรับทดสอบ แต่จะเขียนเองหมดก็ได้
+
+LOAD CSV WITH HEADERS FROM 'file:///exercises.csv' AS row
+CREATE (:Exercises {name: row.Question, msg_reply: row.Answer});
+
+# Greeting
+CREATE 
+	(greet1:Greeting {name:"สวัสดีครับ", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet2:Greeting {name:"สวัสดีค่ะ", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet3:Greeting {name:"สวัสดี", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet4:Greeting {name:"สวัสดีงับ", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet5:Greeting {name:"หวัดดี", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet6:Greeting {name:"ไง", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet7:Greeting {name:"Hello", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet8:Greeting {name:"Hi", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet9:Greeting {name:"Hey", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet10:Greeting {name:"What's up", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet11:Greeting {name:"Suh", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"}),
+	(greet12:Greeting {name:"ดีย์", msg_reply:"สวัสดีครับ ผม Chad Bot จะมาช่วยแนะนำคุณ สอบถามได้เลยครับ"})
+
+# Grateful
+CREATE 
+	(grate1:Grateful {name:"ขอบคุณมากครับ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate2:Grateful {name:"ขอบคุณมากค่ะ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate3:Grateful {name:"ขอบคุณที่ช่วยครับ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate4:Grateful {name:"ขอบคุณที่ช่วยค่ะ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate5:Grateful {name:"ขอบคุณสำหรับคำตอบครับ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate6:Grateful {name:"ขอบคุณสำหรับคำตอบค่ะ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate7:Grateful {name:"ขอบคุณสำหรับคำแนะนำ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate8:Grateful {name:"ขอบคุณ", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"}),
+	(grate9:Grateful {name:"ขอบคุณสำหรับข้อมูล", msg_reply:"ยินดีที่ได้ช่วยเหลือครับ หากต้องการข้อมูลอะไรเพิ่มเติมสามารถสอบถามมาได้เลยครับ"})
+
+# Goodbye
+CREATE 
+	(goodbye1:Goodbye {name:"บาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye2:Goodbye {name:"บ๊ายบาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye3:Goodbye {name:"ไปแล้ว บ๊ายบาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye4:Goodbye {name:"ไปดีกว่า บ๊ายบาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye5:Goodbye {name:"ลาก่อน", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye6:Goodbye {name:"ไปละ", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye7:Goodbye {name:"งั้นฉันคงคุยแค่นี้แหละลาก่อน", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye8:Goodbye {name:"งั้นฉันคงคุยแค่นี้แหละบ๊ายบาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye9:Goodbye {name:"ฉันไม่มีอะไรจะถามแล้ว ไปก่อนนะ", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"}),
+	(goodbye10:Goodbye {name:"ไปละ บาย", msg_reply:"ไว้เจอกันครับ บ๊ายบายครับ"})
+
+CREATE 
+	(exercise1:Exercises {name:"weight training คืออะไร", msg_reply:"เวทเทรนนิ่ง คือ หนึ่งในการออกกำลังกายโดยการใช้แรงต้าน (Resistance Exercise) ซึ่งแรงต้านนี้อาจมาจากทั้งน้ำหนักตัว (Bodyweight) หรืออุปกรณ์ออกกำลังกายต่าง ๆ เช่น ดัมเบล แคทเทิลเบล บาร์เบล ยางยืดออกกำลังกายหรือแมชชีนเทรนนิ่งต่าง ๆ "}),
+	(exercise2:Exercises {name:"เวทเทรนนิ่ง คืออะไร?", msg_reply:"เวทเทรนนิ่ง คือ หนึ่งในการออกกำลังกายโดยการใช้แรงต้าน (Resistance Exercise) ซึ่งแรงต้านนี้อาจมาจากทั้งน้ำหนักตัว (Bodyweight) หรืออุปกรณ์ออกกำลังกายต่าง ๆ เช่น ดัมเบล แคทเทิลเบล บาร์เบล ยางยืดออกกำลังกายหรือแมชชีนเทรนนิ่งต่าง ๆ "})
+
+CREATE 
+	(pz1:pizza {name:"พิซซ่าไบท์", msg_reply:"https://www.1112.com/th/bite"}),
+	(pz2:pizza {name:"พิซซ่าสุดคุ้ม", msg_reply:"https://www.1112.com/th/puff"}),
+	(pz3:pizza {name:"ชุดอิ่มเดี่ยว", msg_reply:"https://www.1112.com/th/combo"}),
+	(pz4:pizza {name:"ชุดอิ่มกลุ่ม", msg_reply:"https://www.1112.com/th/value-set"}),
+	(pz5:pizza {name:"ไก่", msg_reply:"https://www.1112.com/th/chicken"}),
+	(pz6:pizza {name:"พาสต้า", msg_reply:"https://www.1112.com/th/pasta"}),
+	(pz7:pizza {name:"อาหารทานเล่น", msg_reply:"https://www.1112.com/th/appetizers"}),
+	(pz8:pizza {name:"สลัด", msg_reply:"https://www.1112.com/th/salad"}),
+	(pz9:pizza {name:"สเต็ก", msg_reply:"https://www.1112.com/th/steak"}),
+	(pz10:pizza {name:"เครื่องดื่ม", msg_reply:"https://www.1112.com/th/drink"}),
+	(pz11:pizza {name:"ของหวาน", msg_reply:"https://www.1112.com/th/desserts"})
+
+CREATE 
+	(quick_reply1:quick_reply {name:"แนะนำโปร pizza ให้หน่อย", msg_reply:"แนะนำ"}),
+	(quick_reply2:quick_reply {name:"แนะนำ", msg_reply:"แนะนำ"}),
+	(quick_reply3:quick_reply {name:"แนะนำโปรหน่อย", msg_reply:"แนะนำ"}),
+	(quick_reply4:quick_reply {name:"แนะนำหน่อย", msg_reply:"แนะนำ"}),
+	(quick_reply5:quick_reply {name:"แนะนำโปรโมชั่นให้หน่อย", msg_reply:"แนะนำ"})
+
+CREATE
+	(quick_reply1:quick_reply {name:"ขอกำหนดช่วงราคาที่ต้องการ", msg_reply:"กำหนดราคา"}),
+	(quick_reply2:quick_reply {name:"กำหนดราคา", msg_reply:"กำหนดราคา"}),
+	(quick_reply3:quick_reply {name:"กำหนด", msg_reply:"กำหนดราคา"}),
+	(quick_reply4:quick_reply {name:"กำหนดช่วงราคา", msg_reply:"กำหนดราคา"}),
+	(quick_reply5:quick_reply {name:"กำหนดราคาของโปรโมชั่น", msg_reply:"กำหนดราคา"}),
+	(quick_reply6:quick_reply {name:"อยากกำหนดราคาโปรโมชั่น", msg_reply:"กำหนดราคา"}),
+	(quick_reply7:quick_reply {name:"กำหนดราคาโปรโมชั่น", msg_reply:"กำหนดราคา"})
+
+CREATE
+	(quick_reply1:quick_reply {name:"ไม่กำหนดราคา", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply2:quick_reply {name:"ขอไม่กำหนดราคา", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply3:quick_reply {name:"ขอไม่กำหนดราคาครับ", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply4:quick_reply {name:"ขอไม่กำหนดราคาค่ะ", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply5:quick_reply {name:"ไม่กำหนดละกัน", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply6:quick_reply {name:"ไม่กำหนดครับ", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply7:quick_reply {name:"ไม่กำหนดค่ะ", msg_reply:"ไม่กำหนดราคา"}),
+	(quick_reply8:quick_reply {name:"ไม่กำหนดช่วงราคา", msg_reply:"ไม่กำหนดราคา"})
+
+CREATE (:quick_reply {name:"ลบประวัติการค้นหา", msg_reply:"ลบประวัติการค้นหา"})

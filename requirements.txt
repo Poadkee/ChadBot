@@ -1,0 +1,14 @@
+pyngrok==7.2.0
+sentence-transformers==3.0.1
+torch==2.4.0
+numpy==1.26.4
+Flask==3.0.3
+line-bot-sdk==3.12.0
+neo4j==5.24.0
+git+https://github.com/huggingface/transformers@ecd61c62862f925a18b4f063dc17fcaf01826e25
+beautifulsoup4==4.12.3
+chromedriver-autoinstaller==0.6.4
+beautifulsoup4==4.12.3
+selenium==4.25.0
+pandas==2.2.2
+faiss-cpu==1.8.0
